@@ -1,4 +1,5 @@
 import 'package:adventure_app/models/story_brain.dart';
+import 'package:adventure_app/reusables/background_image.dart';
 import 'package:flutter/material.dart';
 
 class Home extends StatefulWidget {
@@ -15,9 +16,9 @@ class _HomeState extends State<Home> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        decoration: const BoxDecoration(
+        decoration:  BoxDecoration(
           image: DecorationImage(
-            image: AssetImage('images/background.png'),
+            image: backGroundImage(context),
             fit: BoxFit.cover,
           ),
         ),
